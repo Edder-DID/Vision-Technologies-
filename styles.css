@@ -1,21 +1,134 @@
 
-/* Configuración general */
+/* =================================
+   1. CONFIGURACION GENERAL
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F6F9;
+    color: #263449;
+}
+
+
+/* =================================
+   2. CABECERA
+================================= */
+
+header {
     background-color: #101D35;
     color: white;
-    font-family: Arial, sans-serif;
     text-align: center;
-    padding-top: 100px;
+    padding: 45px 20px;
 }
 
-/* Título principal */
-h1 {
-    font-size: 40px;
+header h1 {
+    font-size: 36px;
     letter-spacing: 3px;
+    margin: 0 0 12px;
 }
 
-/* Texto descriptivo */
-p {
-    font-size: 18px;
+header p {
     color: #A7B6C8;
+    font-size: 16px;
+}
+
+
+/* =================================
+   3. MENU DE NAVEGACION
+================================= */
+
+nav {
+    background-color: #172B49;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #55B5F0;
+}
+
+
+/* =================================
+   4. CONTENIDO PRINCIPAL
+================================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #142D4E;
+    font-size: 26px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   5. PIE DE PAGINA
+================================= */
+
+footer {
+    background-color: #101D35;
+    color: #A7B6C8;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+
+/* =================================
+   6. ADAPTACION A CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
 }
