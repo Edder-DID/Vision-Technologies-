@@ -1,0 +1,21 @@
+
+/* Configuración general */
+body {
+    background-color: #101D35;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+/* Texto descriptivo */
+p {
+    font-size: 18px;
+    color: #A7B6C8;
+}
